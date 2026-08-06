@@ -1,0 +1,58 @@
+1) O que é o retorno NaN em Javascript? Cite um tipo de condição em que este tipo pode
+ser gerado:
+É uma espécie de erro, no qual no Javascript é representado por undefined. Quando você cria um cogigo que não é possível acessar a informação desejada.
+
+2)É possível adicionar uma configuração CSS de múltiplas formas em um código HTML:
+Sim
+É possível inserirmos uma configuração CSS dentro de um elemento: <p style="color:green">
+Outra forma de incluirmos o CSS é adicionarmos a tag <style> no <head> de nossa página e declarar as propriedades para os elementos dentro dessa tag:<style> h2{font-size}; <style>
+Podemos criar uma pagina de CSS e linkar essa pagina em nosso HTML fazendo com que toda a pagina sofra as alterações feita. <link href:"style.css">
+Em geral o que muda é a facilidade de criação, umas sendo mais fáceis e rápidas que outras.
+
+3)Escreva as regras CSS para estilizar uma div com a classe .card-produto com as seguintes exigências: Largura fixa de 300px e centralizada horizontalmente na página. Espaçamento interno (padding) de 20px. Bordas arredondadas em 12px e uma borda sólida de 1px na cor cinza claro (#ddd).Cor de fundo branca:
+
+4) Diferencie as listas ordenadas (<ol>) das listas não ordenadas (<ul>). Crie um exemplo de cada:
+Na lista ordenada, o que você adicionar ira ficar com uma contagem nos termos:
+EX:1)Arroz
+2)Feijão
+3)Carne
+
+Na lista não ordenada os termos ficam em pontos não importando a ordem.
+EX:·Arroz
+·Feijão
+·Carne
+
+5)O que significa a propriedade display no CSS? Compare o comportamento de block,
+inline e inline-block:
+
+Define o comportamento de exibição de um elemento e como ele se organiza na página.
+BLOCK:O elemento ocupa toda a largura disponível da tela e força uma quebra de linha
+INLINE:O elemento fica na mesma linha que os outros, mas não aceita definições de largura ou altura
+INLINE-block:Fica na mesma linha como o inline, mas permite ajustar largura, altura e margens como um bloco
+
+6)Explique o que é o Box Model no CSS e descreva suas partes de dentro para fora.
+É uma espécie de caixa, que define um padrão pro seu código de css.
+Aonde:
+No meio fica o conteúdo. 
+Padding é o espaçamento entre os elementos da pagina.
+Border Fica ao redor do preenchimento.
+Margin: define o espaçamento dos elementos em relação ao resto da pagina
+
+7)Qual é a função das tags semânticas no HTML5, como <header>, <section>, <article> e
+<footer>? Dê exemplos de uso.
+<header> cria o cabeçalho
+<section> cria uma seção dentro do seu código
+<article> Define um conteúdo expecífico
+<footer> cria um rodapé
+
+8)Explique o que é e para que serve o atributo target="_blank" em um link. Quais cuidados de segurança devem ser tomados ao utilizá-lo?
+
+9)O que é a propriedade flex no CSS e como ela é usada? 
+
+Usada no css, o flex é usado para definir uma div que você ira redirecionar dentro do seu código Html.Podendo assim o usuário coloca-la aonde quiser na pagina.
+ 
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+10)
