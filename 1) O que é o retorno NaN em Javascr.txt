@@ -67,6 +67,122 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 
+10) Faça a leitura de um vetor de tamanho 5 de notas. Escreva um código que utilize um
+laço de repetição (for ou for...of) para percorrer o array, calcular e exibir no console a
+soma total e a média aritmética das notas.
+
+let notas = [];
+let soma = 0;
+
+for(let i = 0; i < 5; i++){
+    notas[i] = Number(prompt("Digite a nota " + (i + 1) + ":"));
+}
+
+for(let nota of notas){
+    soma += nota;
+}
+
+let media = soma / 5;
+
+console.log("Soma total:", soma);
+console.log("Média:", media);
+
+11) Crie um objeto com informações de um produto (nome, preco, emEstoque). Se em Estoque for true, exiba "Produto disponível"; caso contrário, "Produto indisponível".
+
+let produto = {
+    nome: "Notebook",
+    preco: 3500,
+    emEstoque: true
+};
+
+if(produto.emEstoque){
+    console.log("Produto disponível");
+}else{
+    console.log("Produto indisponível");
+}
+
+12) Crie um objeto pessoa com os atributos nome, peso, altura e temperatura. Faça uma saída que verifica se essa pessoa está ou não com febre.
+
+let pessoa = {
+    nome: "Vitor",
+    peso: 67,
+    altura: 1.69,
+    temperatura: 38
+};
+
+if(pessoa.temperatura >= 37.8){
+    console.log("A pessoa está com febre.");
+}else{
+    console.log("A pessoa não está com febre.");
+}
+
+13) Crie 2 objetos do tipo livro e peça ao usuário para preenche-los. Depois, imprima na tela o livro com autoria mais antiga, o livro com mais páginas e o livro com autor brasileiro(caso haja).
+
+let livro1 = {
+    nome: prompt("Digite o nome do primeiro livro:"),
+    autor: prompt("Digite o autor do primeiro livro:"),
+    ano: Number(prompt("Digite o ano de nascimento do autor:")),
+    paginas: Number(prompt("Digite o número de páginas:")),
+    brasileiro: prompt("O autor é brasileiro? (sim ou não)")
+};
+
+let livro2 = {
+    nome: prompt("Digite o nome do segundo livro:"),
+    autor: prompt("Digite o autor do segundo livro:"),
+    ano: Number(prompt("Digite o ano de nascimento do autor:")),
+    paginas: Number(prompt("Digite o número de páginas:")),
+    brasileiro: prompt("O autor é brasileiro? (sim ou não)")
+};
+
+if(livro1.ano < livro2.ano){
+    console.log("Livro com autoria mais antiga:", livro1.nome);
+}else{
+    console.log("Livro com autoria mais antiga:", livro2.nome);
+}
+
+if(livro1.paginas > livro2.paginas){
+    console.log("Livro com mais páginas:", livro1.nome);
+}else{
+    console.log("Livro com mais páginas:", livro2.nome);
+}
+
+if(livro1.brasileiro.toLowerCase() == "sim"){
+    console.log("Livro com autor brasileiro:", livro1.nome);
+}
+
+if(livro2.brasileiro.toLowerCase() == "sim"){
+    console.log("Livro com autor brasileiro:", livro2.nome);
+}
+
+if(livro1.brasileiro.toLowerCase() != "sim" && livro2.brasileiro.toLowerCase() != "sim"){
+    console.log("Não há autor brasileiro.");
+}
+14) Crie um objeto filme que receba do usuário seu nome e classificação. Em seguida, imprima os dados desse filme, informando sua faixa etária classificatória.
+
+let filme = {
+    nome: prompt("Digite o nome do filme:"),
+    classificacao: Number(prompt("Digite a classificação do filme:"))
+};
+
+console.log("Nome:", filme.nome);
+console.log("Classificação:", filme.classificacao);
+
+if(filme.classificacao == 0){
+    console.log("Faixa etária: Livre");
+}else if(filme.classificacao == 10){
+    console.log("Faixa etária: 10 anos");
+}else if(filme.classificacao == 12){
+    console.log("Faixa etária: 12 anos");
+}else if(filme.classificacao == 14){
+    console.log("Faixa etária: 14 anos");
+}else if(filme.classificacao == 16){
+    console.log("Faixa etária: 16 anos");
+}else if(filme.classificacao == 18){
+    console.log("Faixa etária: 18 anos");
+}else{
+    console.log("Classificação inválida.");
+}
+
 (15) quais as diferencas entre criar uma variavel do tipo const, var e let? cite exemplos.
 var e o jeito antigo de criar variavel, e meio baguncado porque deixa voce recriar a mesma variavel sem querer.
 let e o jeito moderno para coisas que mudam de valor, tipo um contador.
