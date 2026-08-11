@@ -11,6 +11,11 @@ Em geral o que muda é a facilidade de criação, umas sendo mais fáceis e ráp
 
 3)Escreva as regras CSS para estilizar uma div com a classe .card-produto com as seguintes exigências: Largura fixa de 300px e centralizada horizontalmente na página. Espaçamento interno (padding) de 20px. Bordas arredondadas em 12px e uma borda sólida de 1px na cor cinza claro (#ddd).Cor de fundo branca:
 
+3. Escreva as regras CSS para estilizar uma div com a classe .card-produto com as
+seguintes exigências: Largura fixa de 300px e centralizada horizontalmente na página.
+Espaçamento interno (padding) de 20px. Bordas arredondadas em 12px e uma borda
+sólida de 1px na cor cinza claro (#ddd).Cor de fundo branca.
+
 4) Diferencie as listas ordenadas (<ol>) das listas não ordenadas (<ul>). Crie um exemplo de cada:
 Na lista ordenada, o que você adicionar ira ficar com uma contagem nos termos:
 EX:1)Arroz
@@ -47,6 +52,13 @@ Margin: define o espaçamento dos elementos em relação ao resto da pagina
 
 8)Explique o que é e para que serve o atributo target="_blank" em um link. Quais cuidados de segurança devem ser tomados ao utilizá-lo?
 
+o atributo target="_blank" serve para fazer o link abrir em uma nova aba ou janela do navegador, sem fechar a pagina atual onde o usuario esta.
+
+o cuidado de seguranca e que o site que foi aberto ganha acesso parcial a pagina antiga por meio de um comando de javascript chamado window.opener. isso permite que um site malicioso troque a sua pagina antiga por uma falsa para tentar roubar senhas (ataque de phishing).
+
+para evitar isso, basta colocar o atributo rel="noopener noreferrer" junto no link.
+
+
 9)O que é a propriedade flex no CSS e como ela é usada? 
 
 Usada no css, o flex é usado para definir uma div que você ira redirecionar dentro do seu código Html.Podendo assim o usuário coloca-la aonde quiser na pagina.
@@ -55,4 +67,55 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 
-10)
+(15) quais as diferencas entre criar uma variavel do tipo const, var e let? cite exemplos.
+var e o jeito antigo de criar variavel, e meio baguncado porque deixa voce recriar a mesma variavel sem querer.
+let e o jeito moderno para coisas que mudam de valor, tipo um contador.
+const e para coisas fixas que voce nao quer que ninguem mude o valor.
+
+exemplos:
+var nome = "ana";
+let idade = 20;
+idade = 21;
+const cpf = "123.456.789-00";
+
+(16) responda no console o que sera impresso ou qual erro ocorrera.
+voce nao mandou o codigo dessa questao, mas no geral:
+se tentar mudar o valor de uma variavel const, o sistema da o erro typeerror.
+se tentar usar uma variavel let ou const antes de criar ela, da o erro referenceerror.
+
+(17) qual a diferenca entre javascript e java?
+java e uma linguagem pesada e seria, usada para criar programas de computador grandes, bancos e aplicativos android.
+javascript e a linguagem leve usada para dar vida, cliques e animacoes para os sites da internet.
+
+(18) qual a diferenca entre == e === no javascript? de exemplos praticos.
+== e a comparacao de boa, ela olha so se o valor e parecido e finge que o texto "5" e igual ao numero 5.
+=== e a comparacao certinha, ela exige que o valor e o tipo de dado sejam identicos.
+
+exemplos:
+5 == "5" da verdadeiro.
+5 === "5" da falso porque um e numero e o outro e texto.
+
+(19) o que sao operadores logicos (&&, ||, !) e como eles podem ser usados em condicionais? exemplifique.
+&& significa "E": so passa se todas as condicoes forem verdadeiras.
+|| significa "OU": passa se pelo menos uma condicao for verdadeira.
+! significa "NAO": inverte as coisas, o que e verdadeiro vira falso.
+
+exemplo:
+if (temdinheiro === true && temtempo === true) { console.log("vou viajar"); }
+
+(20) e possivel adicionar novas propriedades a um objeto depois de criado? como?
+sim, e super facil! e so colocar o nome do objeto, um ponto, o nome da coisa nova e o valor.
+
+exemplo:
+let carro = { marca: "fiat" };
+carro.cor = "vermelho";
+
+(21) qual a diferenca entre null e undefined no javascript?
+undefined e quando o javascript cria uma variavel mas voce esqueceu de colocar valor nela.
+null e quando voce limpa o valor da variavel de proposito para mostrar que ela esta vazia.
+
+(22) o que e um objeto em javascript e como ele e declarado? de um exemplo basico.
+objeto e como uma caixa cheia de informacoes sobre uma coisa so (tipo uma pessoa ou um produto).
+
+exemplo:
+let usuario = { nome: "lucas", idade: 25 };
